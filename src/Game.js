@@ -24,8 +24,8 @@ class Game extends React.Component {
        // need to check if the game is finished or not
         const history = this.state.history;
         if (history.length > 1) {
+            // use pop or splice
             history.pop(-1, 1);
-
             this.setState({
                 history,
                 xIsNext: !this.state.xIsNext,
@@ -60,7 +60,6 @@ class Game extends React.Component {
         } else {
             status = `Next player ${this.state.xIsNext ? 'X' : 'O'}`;
         }
-
 
         return (
             <div className="game">
