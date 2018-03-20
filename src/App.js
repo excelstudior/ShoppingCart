@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Board from './Board';
+import Game from './Game';
 
 
 class App extends Component {
@@ -17,12 +17,12 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div className="App-header">
+                {/* <div className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <h2>Welcome to React</h2>
                 </div>
-                {/* <p>{ this.state.loading.toString() }</p> */}
-                <Board />
+                <p>{ this.state.loading.toString() }</p> */}
+                <Game />
             </div>
         );
     }
