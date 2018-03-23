@@ -19,3 +19,13 @@ export function calculateWinner(squares) {
     }
     return null;
 }
+
+export function isNullElement(squares) {
+    for (let i = 0; i < squares.length; i += 1) {
+        if (squares[i] === null) {
+            return true;
+        }
+    }
+
+    return false;
+}
